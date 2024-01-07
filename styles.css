@@ -6,3 +6,26 @@ body {
     background-image: url('/images/Grass.jpg');
     background-attachment: fixed;
 }
+
+.title {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wood-title {
+    position:absolute;
+    transform: rotate(-90deg) scale(1.3);
+    margin-top: 500px;
+}
+
+.wood-text {
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 470px;
+    margin-left: 50px;
+    font-family: 'twilight lechy', sans-serif;    
+    font-size: 95px;
+}
