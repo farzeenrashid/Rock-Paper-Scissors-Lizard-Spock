@@ -5,6 +5,7 @@
 
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <script src="rock-paper-scissors.js"></script>
         <title>Rock, Paper, Scissors, Lizard, Spock!</title>
         <link href="https://fonts.cdnfonts.com/css/twilight-lechy" rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/alexandria-4" rel="stylesheet">
@@ -12,6 +13,8 @@
     </head>
 
     <body>
+
+    <div id="start-screen">
 
         <div class="title">
             <img src="/images/Wood-2.png" alt="Wood Picture" class="wood-title">
@@ -22,14 +25,19 @@
         </div>
         <div class="start">
             <h1>Ready to play?</h1>
-            <button>
+            <button onclick="startGame()">
                 <p>Start</p>
             </button>
         </div>
 
-        <img class="scroll-1" src="/images/Paper.png" alt="Scroll Picture">
+    </div>
+
+
+    <div id="game-description-screen">
+
         <div class="game-description">
-            <p>"<strong>Rock, Paper, Lizard, Spock</strong>" is an expansion on the traditional game "Rock, Paper, Scissors".</p>
+            <img class="scroll-1" src="/images/Scroll.png" alt="Scroll Picture">
+            <p>"<strong>Rock, Paper, Lizard, Spock</strong>" is an expansion on the traditional game "Rock, Paper, Scissors."</p>
         </div>
         <div class="scroll-1-button">
             <button>
@@ -37,88 +45,7 @@
             </button>
         </div> 
 
-        <img class="scroll-2" src="/images/Wood-1.png" alt="Scroll Picture">
-        <div class="game-rules">
-            <ul>
-                <li>Rock beats scissors, </li>
-                <li>Paper beats rock, </li>
-                <li>Scissors beats paper, </li>
-            </ul>
-        </div>
-        <div class="scroll-2-button">
-            <button>
-                <a href="#player-selection">Okay, got it.</a>
-            </button>
-        </div>
-
-        <div id="player-selection">
-            <p>You want to play against the computer or a friend?</p>
-            <div class="computer-selection">
-                <button>Computer</button>
-            </div>
-            <div class="friend-selection">
-                <button>Friend</button>
-            </div>
-        </div>
-
-        <div id="round-selection">
-            <p>You want to play the best of...</p>
-            <div class="3-selection">
-                <button>3</button>
-            </div>
-            <div class="5-selection">
-                <button>5</button>
-            </div>
-            <div class="10-selection">
-                <button>10</button>
-            </div>
-        </div>
-
-        <div id="main">
-
-            <div id="left">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-    
-            <div id="middle">
-                <div id="scoreboard">
-                    <div class="user-score">
-                        <p>Your Score</p>
-                    </div>
-                    <div class="round-number">
-                        <p>Round</p>
-                    </div>
-                    <div class="other-score">
-                        <p>Computer's Score</p>
-                    </div>
-                </div>
-                <div id="user-selection"></div>
-                <div id="other-selection"></div>
-                <div id="game-message"></div>
-            </div>
-    
-            <div id="right">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div id="game-over">
-            <p>Do you want to play again?</p>
-            <button>Restart</button>
-        </div>
+    </div>
 
     </body>
 

@@ -7,9 +7,16 @@ body {
     background-attachment: fixed;
 }
 
+#start-screen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72vh;
+}
+
 .title {
-    position:relative;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -17,36 +24,37 @@ body {
 .wood-title {
     position:absolute;
     transform: rotate(-90deg) scale(1.3);
-    margin-top: 500px;
+
 }
 
 .wood-text {
     position: absolute;
     text-align: center;
     line-height: 20px;
-    margin: 470px 0px 0px 50px;
+    margin: 0px 0px 0px 50px;
     font-family: 'twilight lechy', sans-serif;    
     font-size: 95px;
     color: #472f03;
 }
 
 .start {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .start h1 {
+    position: absolute;
     text-align: center;
+    margin: 465px 0px 0px 50px;
     font-size: 40px;
-    margin-top: 450px;
     font-family: 'Alexandria', sans-serif;
 }
 
 .start button {
     position: absolute;
     font-size: 40px;
-    margin-top: 630px;
+    margin: 680px 0px 0px 40px;
     padding: 0px 50px 0px 50px;
     transform: scale(0.8);
     font-family: 'Alexandria', sans-serif;
@@ -63,5 +71,25 @@ body {
     cursor: pointer;
     transform: translateY(2px);
     transition: transform 0.2s ease-in-out;
+}
+
+#game-description-screen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72vh;
+}
+
+.game-description {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-1 {
+    position: absolute;
+
 }
   

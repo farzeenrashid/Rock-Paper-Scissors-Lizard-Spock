@@ -1,3 +1,19 @@
+function showStartScreen() {
+    document.getElementById('game-description-screen').style.display = 'none';
+}
+
+window.onload = function () {
+    showStartScreen();
+};
+
+function startGame() {
+    // Hide start screen
+    document.getElementById('start-screen').style.display = 'none';
+
+    // Show game screen
+    document.getElementById('game-description-screen').style.display = 'block';
+}
+
 console.log("Let's play rock paper scissors!")
 
 const readline = require('readline');
