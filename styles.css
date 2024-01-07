@@ -24,10 +24,10 @@ body {
     position: absolute;
     text-align: center;
     line-height: 20px;
-    margin-top: 470px;
-    margin-left: 50px;
+    margin: 470px 0px 0px 50px;
     font-family: 'twilight lechy', sans-serif;    
     font-size: 95px;
+    color: #472f03;
 }
 
 .start {
@@ -40,13 +40,28 @@ body {
     text-align: center;
     font-size: 40px;
     margin-top: 450px;
+    font-family: 'Alexandria', sans-serif;
 }
 
 .start button {
     position: absolute;
     font-size: 40px;
-    margin-top: 640px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-top: 630px;
+    padding: 0px 50px 0px 50px;
     transform: scale(0.8);
+    font-family: 'Alexandria', sans-serif;
+    background-color: rgb(245, 132, 156);
+    color: rgb(255, 255, 255);
+    border: 5px solid rgb(44, 117, 50);
+    font-weight: bold;
 }
+
+.start button:hover {
+    background-color: rgb(219, 117, 139);
+    color: #e2d7d7;
+    transition: transform 0.2s ease-in-out background-color 0.4s color 0.4s;
+    cursor: pointer;
+    transform: translateY(2px);
+    transition: transform 0.2s ease-in-out;
+}
+  
