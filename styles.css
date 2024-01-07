@@ -29,3 +29,21 @@ body {
     font-family: 'twilight lechy', sans-serif;    
     font-size: 95px;
 }
+
+.start {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 450px;
+}
+
+.start button {
+    position: absolute;
+    font-size: 30px;
+    margin-top: 600px;
+}
