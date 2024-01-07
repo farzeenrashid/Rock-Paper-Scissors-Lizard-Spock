@@ -70,26 +70,61 @@ body {
     transition: transform 0.2s ease-in-out background-color 0.4s color 0.4s;
     cursor: pointer;
     transform: translateY(2px);
-    transition: transform 0.2s ease-in-out;
 }
 
 #game-description-screen {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 72vh;
 }
 
 .game-description {
-    position:relative;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    height: 98vh;
 }
 
 .scroll-1 {
     position: absolute;
-
+    transform: scale(1.1);
+    z-index: 1;
 }
-  
+
+@keyframes textAppear {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    40% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.game-description p {
+    position: absolute;
+    margin: 0px 150px 0px 200px;
+    z-index: 2;
+    font-size: 19px;
+    white-space: pre-line;
+    animation: textAppear 2s ease-out;
+}
+
+.game-description button {
+    position: absolute;
+    z-index: 2;
+    font-size: 18px;
+    margin-top: 360px;
+    padding: 5px 20px 5px 20px;
+    font-family: 'Alexandria', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgb(248, 202, 49);
+    border: 1px solid rgb(212, 160, 2);
+}
+
+.game-description button:hover {
+    cursor: pointer;
+}
